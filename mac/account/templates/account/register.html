@@ -1,0 +1,26 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <head>
+        <title>Registerfor eTribes</title>
+    </head>
+    <script>
+function clicked(){
+    console.log("Function clicked");
+}
+        </script>
+    <body>
+        {% if t%}
+        confirm("SUCCESS");
+        {%endif%}
+<form method="post">
+    {%csrf_token%}
+    {{form|crispy}}
+    <input type="Submit">
+    <a href='/account/login'>login</a>
+</form>
+
+   
+    </body>
+</html>

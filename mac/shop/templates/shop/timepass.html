@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+{%block css%}
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+ body{
+font-family: 'Playfair Display SC','cursive';
+ background-color:#ff00bb;
+ font-weight: 500;
+}
+#he{
+	border-left:  1px dotted #000;
+	border-right:  1px dotted #000;
+	margin:  50px 50px;
+	border-color:#0000ff;
+	border-width: 02px;
+	margin-left: 30px;
+	margin-right: 20px;
+	margin-top:40px;
+	margin-bottom:  40px;
+	padding: 20px;
+
+}
+
+	 
+
+body .abhi{
+
+ background-color:#ffaabb;
+}
+ h1,h3{
+ 	text-align: left;
+	color:red;
+	background-color:#00ff00; 
+	display: grid;
+	ine-height: 50px;
+	text-shadow: 2px 2px blue;
+
+ body h1{  
+ 	h1{
+	color:#aabbcc;
+	background-color:#ff0000; 
+}
+}
+body{
+	margin-left: 50px
+	text-shadow: 2px 2px yellow;
+}
+
+
+</style>
+{%endblock%}
+<head>
+  <title>Title</title>
+  Hello World
+  <h1>Head</h1>
+  </head>
+  <header height="1000" id="he" > MySite</header>
+<body>
+	<h1>h1 in B0dy</h1>
+	<h3>h3</h3>
+  <main>
+  <article>
+  	
+  <div class="abhi"> <i>abhi</i></div>
+  <div> <b>Hello</b></div>
+  <span> <p>hello</p></span>
+   <span> hello</span>
+   <p>dfcvvfxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+    <p>dfcvvfxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+<h1>afs</h1>
+<p id="demo">hello asds</p>
+<footer>&copy;Copyright &nbsp; &nbsp; 2017</footer>
+<a href="https://google.com"> HEllo , go to google</a>
+</article>
+  <span> brooo</span>
+  <section>Hell<br/>o</section>
+  <section>Babe!</section>
+  <div> My fav games</div>
+  <ul style="list-style-type: square">
+    
+    <li> <b>PUBG</b></li>
+
+    <li> <i>Sine line</i></li>
+    
+  </ul>
+  <table border="1px" width="50%">
+    <thead >
+      <tr>
+      <th > Name</th>
+      <th >Age</th>
+      <th >Salary</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td name="aa">Abhi</td>
+      <td>20</td>
+      <td>50000</td>
+</tr>
+<tr>
+  <td>BAbe</td>
+  <td>19</td>
+  <td>25000</td>
+  </tr>
+    </tbody>
+
+  </table>
+  <img src="media/test.jpg">
+<input type="checkbox" name="adc" id="hele" value="hele" />adf<br>
+<input type="checkbox" name="fac" value="ads"/>dsas<br>
+<input type="radio" name="as" value="cs d" />asd<br/>
+<input type="radio"  name="as"/>ads<br/>
+<button onclick="Display" >date</button>
+<p id="date"></p>
+<img src="/media/pp">
+<video width="540" height="320" controls>
+	<source src="/media/videoplayback.mp4" type="video/mp4">
+		your 
+</video>
+<button type="submit" class="btn" id="test">Button</button>
+</main>
+</body>
+{%block js%}
+<script type="text/javascript">
+	var s=new Date();
+	var ans="";
+	ans+=s.getDay();
+	ans+="day\n";
+	ans+=s.getHours();
+	ans+=":";
+	ans+=s.getMinutes();
+	ans+=":";
+	ans+=s.getSeconds();
+	
+		document.getElementById("date").innerHTML=ans;
+	function ButtonClicked(){
+		document.getElementById('demo').innerHTML="jdsfl";
+		
+	}
+	function Display() {
+		// body...
+		
+	}
+	
+document.getElementById('test').addEventListener('click',ButtonClicked)
+</script>{%endblock%}
+</html>
